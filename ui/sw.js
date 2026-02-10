@@ -45,7 +45,7 @@ self.addEventListener("push", (event) => {
     actions: data.actions || [
       {
         action: "open",
-        title: "Görüntüle 👀"
+        title: "Görüntüle  👀"
       },
       {
         action: "close",
