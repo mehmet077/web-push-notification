@@ -12,7 +12,7 @@ self.addEventListener("push", (event) => {
   const title = data.title || "Yeni Bildirim 🚀";
 
   const options = {
-    body: data.body || "Detayları görmek için tıklayın",
+    body: data.body + (data.data?.vibrate ? ` - Vibrate: ${data.data.vibrate}` : "") || "Detayları görmek için tıklayın",
     icon: data.icon || "/images/logo.png",
     badge: data.badge || "/images/badge.png",
 
