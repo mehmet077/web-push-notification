@@ -63,7 +63,9 @@ Private Key
 Proje kök dizinine bir .env dosyası oluşturun:
 
 VAPID_SUBJECT=mailto:admin@domain.com
+
 VAPID_PUBLIC_KEY=ÜRETTİĞİNİZ_PUBLIC_KEY
+
 VAPID_PRIVATE_KEY=ÜRETTİĞİNİZ_PRIVATE_KEY
 
 4️⃣ Sunucuyu Başlatın
