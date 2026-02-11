@@ -40,7 +40,7 @@ Her türlü web uygulaması için anlık bildirim altyapısı sağlar.
 
 ### 1️⃣ Bağımlılıkları Yükleyin
 
-``bash
+```bash
 npm install
 
 2️⃣ VAPID Anahtarlarını Oluşturun
@@ -48,7 +48,7 @@ npm install
 Proje dizininde aşağıdaki komutu çalıştırın:
 
 ./node_modules/.bin/web-push generate-vapid-keys
-
+```
 
 Bu komut size:
 
@@ -76,7 +76,9 @@ POST /send-multiple
 
 Bu uç nokta, abonelere toplu halde "Haber Manşeti" formatında bildirim gönderir.
 
-📦 Örnek JSON Gövdesi
+### 📦 Örnek Request Body
+
+```json
 {
   "subscriptions": [
     {
@@ -90,6 +92,7 @@ Bu uç nokta, abonelere toplu halde "Haber Manşeti" formatında bildirim gönde
   "message": "Yeni içerik yayında!",
   "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&h=600&auto=format"
 }
+```
 
 🎨 Bildirim Tasarımı (Haber Bildirimi Etkisi)
 
